@@ -1,12 +1,9 @@
-#include "triangle.h"
+#include <iostream>
 #include "test_util.h"
 
-int main() {
+using namespace std;
 
-  Triangle t1 = Triangle();
-  t1.setSides(2, 3, 4);
-
-  
-
+int main(int argc, char* argv[]) {
+  cout << "0x07-exercises" << endl;
   return 0;
 }

@@ -2,15 +2,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Build and Debug Current File",
+      "name": "Build and Debug",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/${fileBasenameNoExtension}.out",
+      "program": "${workspaceFolder}/build/triangle",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
-      "externalConsole": false,
+      "externalConsole": true,
       "windows": {
         "MIMode": "gdb",
       },
@@ -20,27 +20,7 @@
       "osx": {
         "MIMode": "lldb"
       },
-      "preLaunchTask": "build_current_file",
-    }, {
-      "name": "Build and Debug Current Directory",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${workspaceFolder}/build/${fileBasenameNoExtension}.out",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": false,
-      "windows": {
-        "MIMode": "gdb",
-      },
-      "linux": {
-        "MIMode": "gdb"
-      },
-      "osx": {
-        "MIMode": "lldb"
-      },
-      "preLaunchTask": "build_current_directory",
-    },
+      "preLaunchTask": "build_project",
+    }
   ]
 }

@@ -2,35 +2,24 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "build_current_file",
-      "type": "shell",
+      "label": "build_project",
+      "type": "cppbuild",
       "command": "g++",
       "args": [
         "-g",
-        "-std=c++11",
-        "${fileDirname}/${fileBasename}",
+        "-std=c++20",
+        "main.cpp",
+        "test_util.cpp",
         "-o",
-        "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
+        "${workspaceFolder}/build/triangle"
       ],
+      "options": {
+        "cwd": "${workspaceFolder}/src"
+      },
       "group": "build",
       "problemMatcher": [
         "$gcc"
       ],
-    }, {
-      "label": "build_current_directory",
-      "type": "shell",
-      "command": "g++",
-      "args": [
-        "-g",
-        "-std=c++11",
-        "${fileDirname}/*.cpp",
-        "-o",
-        "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
-      ],
-      "group": "build",
-      "problemMatcher": [
-        "$gcc"
-      ],
-    },
+    }
   ]
 }
