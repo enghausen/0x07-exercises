@@ -5,8 +5,8 @@
 
 class TestUtil {
   public:
-    bool test(std::string description, double expected, double actual); 
-    bool test(std::string description, bool expected, bool actual);
+    bool equal(std::string description, double expected, double actual); 
+    bool equal(std::string description, bool expected, bool actual);
 };
 
 #endif
