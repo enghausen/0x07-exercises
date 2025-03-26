@@ -6,6 +6,7 @@
 class TestUtil {
   public:
     bool test(std::string description, double expected, double actual); 
+    bool test(std::string description, bool expected, bool actual);
 };
 
 #endif
