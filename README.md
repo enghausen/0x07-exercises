@@ -12,7 +12,7 @@ Create a class `Triangle` with the following:
   - `void print()`
   - Getters and setters for each data member (six functions in total)
 
-Be careful to use the exact naming as defined above or else you'll have to change the tests in `main.cpp` 
+Be careful to use the exact naming as defined above or else you'll have to change the tests in `main.cpp`. 
 
 ## Invariants
 Add the Triangle Inequality Theorem as an invariant in the `Triangle` class.
@@ -52,6 +52,8 @@ TEST area
 We can see that all but one test passes in the example above. The tests are telling us there are some problems with the algorithm in the `area()` method.
 
 This implementation for the `TestUtil` class can be found in `test_util.h` and `test_util.cpp` – take a look too see how it works "under the hood" and come up with your own tests.
+
+Hint: You might want to look up rounding (e.g. in a LLM) before testing the methods that returns `double values`
 
 ## Triangle geometry
 Here are some useful information about triangles you might want to consider when working on this exercise
