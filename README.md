@@ -23,7 +23,7 @@ Consider the following:
 
 ## The Master Plan
 Here is a master plan of how one could solve this exercise:
-1. Add the required files (`triangle.h`, `triangle.cpp`) to the `src` directory
+1. Add the required files (`triangle.h`, `triangle.cpp`) to the `src` directory (hint: don't forget to add it to `.vscode/tasks.json`)
 2. Implement the class definition in the header file (`triangle.h`)
 3. Add the all the methods defined in the header file (`triangle.h`) in the source file (`triangle.cpp`), but keep it simple for now (e.g. all getter just return 0) (remember to prefix class methods with `Triangle::`)
 4. Check that the code compiles (the tests run, some or all tests may fail, but that's okay)
