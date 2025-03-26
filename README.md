@@ -2,7 +2,7 @@
 
 Create a class `Triangle` with the following:
 
-- Data members `a`, `b` and `c` each representing a side of the triangle (should the sides be of type `int`, `float` or something else?)
+- Data members `a`, `b` and `c` each representing a side of the triangle (should the sides be of type `int`, `double` or something else?)
 - Member functions
   - `Triangle()`
   - `Triangle(double a, double b, double c)`
